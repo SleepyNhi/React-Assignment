@@ -1,0 +1,49 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+ul {
+    border: 1px;
+    color: blue;
+    list-style-type: none;
+    position: relative;
+}
+
+#list {
+    text-align: center;
+}
+
+button {
+    background:none!important;
+    color:inherit;
+    border:none; 
+    padding:0!important;
+    font: inherit;
+    cursor: pointer;
+}
+input {
+    width: 100%;
+}
+
+.ChangeColor {
+    size: 5px;
+    color: red;
+}
+
+#button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 10%;
+    margin-bottom: 5px;
+}
