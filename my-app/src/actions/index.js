@@ -1,13 +1,17 @@
+
+export const TOGGLE_ADD = 'TOGGLE_ADD'
 export const TOGGLE_MODAL = 'TOGGLE_MODAL'
-export const TOGGLE_SUBMIT = 'TOGGLE_SUBMIT'
+
 /*
  * action creators
  */
 
-export function toggleModal(index) {
-  return { type: TOGGLE_MODAL, index}
-}
-export function toggleSubmit(customer){
-  return { type: TOGGLE_SUBMIT, customer}
+
+
+export function addEntry(entry){
+  return { type: TOGGLE_ADD, entry}
 }
 
+export function toggleModal(){
+  return { type: TOGGLE_MODAL }
+}
