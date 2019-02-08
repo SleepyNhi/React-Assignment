@@ -1,45 +1,21 @@
 import React from 'react';
+import Modal from '../components/modal'
+
+const TimeSlot = ({ timeslot }) => (
 
 
-// function mapDispatchToProps(dispatch){
-//     return {toggleModal : showModal => dispatch(toggleModal(showModal)),
-           
-//     }
-// }
-// const mapStateToProps = state => {
-//     return { showModal: state.showModal
-//     }
-// }
-
-
-const TimeSlot = ({ onClick, completed, text }) => (
   <li
-    onClick={onClick}
-    style={{
-      textDecoration: completed ? 'line-through' : 'none'
-    }}
   >
-    {text}
+   
+    <Modal
+      name = {timeslot.name}
+      phonenum = {timeslot.phonenum}
+      time = {timeslot.time}
+      index = {timeslot.id}
+      completed = {timeslot.completed}
+    />
   </li>
 )
-
-
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         name: this.props.timeInfo.name,
-    //         phoneNum: this.props.timeInfo.phoneNum
-    //     }
-    //     this.handleName = this.handleName.bind(this);
-    //     this.handlePhoneNum = this.handlePhoneNum.bind(this); 
-    // }
-
-    // handleName(e) {
-    //     this.setState({name: e.target.value});
-    // }
-    // handlePhoneNum(e) {
-    //     this.setState({phoneNum: e.target.value});
-    // }
 
    
  
